@@ -1,0 +1,22 @@
+[
+  {
+    "model": "zoo.animal",
+    "pk": 1,
+    "fields": {
+      "nombre_vulgar": "León",
+      "nombre_cientifico": "Panthera leo",
+      "familia": "Felidae",
+      "en_peligro": false
+    }
+  },
+  {
+    "model": "zoo.animal",
+    "pk": 2,
+    "fields": {
+      "nombre_vulgar": "Tigre",
+      "nombre_cientifico": "Panthera tigris",
+      "familia": "Felidae",
+      "en_peligro": true
+    }
+  }
+]
