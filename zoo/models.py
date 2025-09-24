@@ -13,7 +13,7 @@ class Zoo(models.Model):
     nombre = models.CharField(max_length=100)
     ciudad = models.CharField(max_length=100)
     pais = models.CharField(max_length=100)
-    tamano_m2 = models.IntegerField()
+    tamano_m2 = models.IntegerField("Tamaño (m2)")
     presupuesto_anual = models.DecimalField(max_digits=12, decimal_places=2)
     animales = models.ManyToManyField(Animal, related_name="zoos")
 

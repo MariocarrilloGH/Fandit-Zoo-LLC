@@ -7,6 +7,7 @@ class AnimalSerializer(serializers.ModelSerializer):
         fields = ["nombre_vulgar", "nombre_cientifico", "familia", "en_peligro"]
 
 class ZooSerializer(serializers.ModelSerializer):
+    tamano_m2 = serializers.IntegerField(label="Tamaño (m2)")
     animales = serializers.ListField(
         child=serializers.CharField(), write_only=True, required=False
     )
